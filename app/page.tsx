@@ -16,7 +16,7 @@ export default function Home() {
                 src={"/assets/logo/liyana_group.png"}
               />
             </div>
-            <div className="absolute top-10 xl:top-1/2 xl:-translate-y-1/2 w-full">
+            <div className="-z-10 absolute top-10 xl:top-1/2 xl:-translate-y-1/2 w-full">
               <div className="w-full aspect-auto">
                 <Image
                   src={`/assets/world_map.svg`}
