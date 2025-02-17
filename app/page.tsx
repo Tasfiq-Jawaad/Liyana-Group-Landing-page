@@ -2,6 +2,7 @@ import React from "react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import Image from "next/image";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 export default function Home() {
   return (
@@ -531,6 +532,32 @@ export default function Home() {
           </TypingAnimation>
         </div>
       </BackgroundBeamsWithCollision>
+
+      <div className="w-full h-fit my-10">
+        <div className="flex flex-col place-items-center overflow-hidden">
+          <h1 className="text-3xl md:text-7xl lg:text-9xl font-bold text-center text-black relative z-20">
+            Our Companies
+          </h1>
+          <div className="w-full h-40 relative">
+            {/* Gradients */}
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full blur-sm" />
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-full" />
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+            {/* Core component */}
+            <SparklesCore
+              background="transparent"
+              minSize={0.7}
+              maxSize={1.5}
+              particleDensity={1500}
+              className="w-full h-full absolute"
+              particleColor="#3b82f6"
+            />
+            {/* Radial Gradient to prevent sharp edges */}
+            <div className="absolute inset-0 w-full h-full bg-white [mask-image:radial-gradient(576px_100px_at_top,transparent_20%,white)] xl:[mask-image:radial-gradient(1024px_200px_at_top,transparent_20%,white)]"></div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }

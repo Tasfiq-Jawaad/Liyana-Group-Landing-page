@@ -1,5 +1,5 @@
 "use client";
-import React, { useId, useMemo } from "react";
+import React, { useId } from "react";
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Container, SingleOrMultiple } from "@tsparticles/engine";
@@ -77,17 +77,17 @@ export const SparklesCore = (props: ParticlesProps) => {
                   mode: "push",
                 },
                 onHover: {
-                  enable: false,
+                  enable: true,
                   mode: "repulse",
                 },
                 resize: true as any,
               },
               modes: {
                 push: {
-                  quantity: 4,
+                  quantity: 30,
                 },
                 repulse: {
-                  distance: 200,
+                  distance: 30,
                   duration: 0.4,
                 },
               },
@@ -166,7 +166,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                   value: 90,
                 },
                 attract: {
-                  distance: 200,
+                  distance: 100,
                   enable: false,
                   rotate: {
                     x: 3000,
