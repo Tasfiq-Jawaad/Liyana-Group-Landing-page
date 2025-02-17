@@ -2,6 +2,8 @@ import React from "react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import Image from "next/image";
+import { Card } from "@/components/ui/3d-pin";
+import Link from "next/link";
 import { SparklesCore } from "@/components/ui/sparkles";
 
 export default function Home() {
@@ -556,6 +558,96 @@ export default function Home() {
             {/* Radial Gradient to prevent sharp edges */}
             <div className="absolute inset-0 w-full h-full bg-white [mask-image:radial-gradient(576px_100px_at_top,transparent_20%,white)] xl:[mask-image:radial-gradient(1024px_200px_at_top,transparent_20%,white)]"></div>
           </div>
+        </div>
+        <div className="h-fit w-full p-20 relative -translate-y-20 flex flex-wrap justify-center gap-24 lg:gap-32 xl:gap-56">
+          <Card title="Warid Logistics" href="https://waridlogistics.co.uk/">
+            <div className="w-72 lg:w-80 p-4 flex flex-col gap-4 tracking-tight text-slate-100/50">
+              <div className="w-full aspect-square relative">
+                <Image
+                  fill
+                  alt="Warid Logistics Logo"
+                  src={"/assets/logo/warid_logistics.png"}
+                />
+              </div>
+
+              <h3 className="text-center max-w-xs !pb-2 !m-0 font-bold  text-2xl lg:text-3xl text-slate-700">
+                Warid Logistics
+              </h3>
+            </div>
+          </Card>
+
+          <Card
+            title="Liyana Logistics Bangladesh"
+            href="https://bd.liyanalogistics.com"
+          >
+            <div className="w-72 lg:w-80 p-4 flex flex-col gap-4 tracking-tight text-slate-100/50">
+              <div className="w-full aspect-square relative">
+                <Image
+                  fill
+                  alt="Liyana Logistics Bangladesh Logo"
+                  src={"/assets/logo/liyana_logistics_bd.png"}
+                />
+              </div>
+
+              <h3 className="text-center max-w-xs !pb-2 !m-0 font-bold  text-2xl lg:text-3xl text-slate-700">
+                Liyana Logistics Bangladesh
+              </h3>
+            </div>
+          </Card>
+
+          <Card title="Liyana Logistics India" href="https://liyanaindia.com/">
+            <div className="w-72 lg:w-80 p-4 flex flex-col gap-4 tracking-tight text-slate-100/50">
+              <div className="w-full aspect-square relative">
+                <Image
+                  fill
+                  alt="Liyana Logistics India logo"
+                  src={"/assets/logo/liyana_logistics_in.png"}
+                />
+              </div>
+
+              <h3 className="text-center max-w-xs !pb-2 !m-0 font-bold  text-2xl lg:text-3xl text-slate-700">
+                Liyana Logistics India
+              </h3>
+            </div>
+          </Card>
+
+          <Card
+            title="Liyana Logistics Pakistan"
+            href="https://pk.liyanalogistics.com"
+          >
+            <div className="w-72 lg:w-80 p-4 flex flex-col gap-4 tracking-tight text-slate-100/50">
+              <div className="w-full aspect-square relative">
+                <Image
+                  fill
+                  alt="Liyana Logistics Pakistan Logo"
+                  src={"/assets/logo/liyana_logistics_pk.png"}
+                />
+              </div>
+
+              <h3 className="text-center max-w-xs !pb-2 !m-0 font-bold  text-2xl lg:text-3xl text-slate-700">
+                Liyana Logistics Pakistan
+              </h3>
+            </div>
+          </Card>
+
+          <Card
+            title="Liyana Logistics United States"
+            href="https://us.liyanalogistics.com"
+          >
+            <div className="w-72 lg:w-80 p-4 flex flex-col gap-4 tracking-tight text-slate-100/50">
+              <div className="w-full aspect-square relative">
+                <Image
+                  fill
+                  alt="Liyana Logistics United States Logo"
+                  src={"/assets/logo/liyana_logistics_us.png"}
+                />
+              </div>
+
+              <h3 className="text-center max-w-xs !pb-2 !m-0 font-bold  text-2xl lg:text-3xl text-slate-700">
+                Liyana Logistics United States
+              </h3>
+            </div>
+          </Card>
         </div>
       </div>
     </main>
